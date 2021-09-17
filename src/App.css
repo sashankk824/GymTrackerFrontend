@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+/* Login page style classes */
+.Logo {
+  background: #d3bc8d;
+  width: 280px;
+  height: 110px;
+  line-height:70px;
+  border-radius: 50%;
+  border: 10px solid black;
+  padding: 5px;
+  margin:auto;
+  text-align:center;
+  color: white;
+  margin-top:150px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.Image {
+  text-align:"center";
+  display:"block";
+  max-width: 30%;
+  margin-left: 10px;
+  border-collapse:collapse;
+  padding:0px;
+}
+
+/* Member Account Creation classes */
+.LogoMini {
+  background: #d3bc8d;
+  width: 140px;
+  height: 55px;
+  line-height:35px;
+  border-radius: 50%;
+  border: 10px solid black;
+  padding: 5px;
+  margin:auto;
+  text-align:center;
+  color: white;
+  margin-top:50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+.ImageMini {
+  text-align:"center";
+  display:"block";
+  max-width: 25%;
+  margin-left: 10px;
+  border-collapse:collapse;
+  padding:0px;
+}
+
+/* General Table Borders */
+table,th,td {
+        margin-left:auto;
+        margin-right:auto;
+        margin:auto;
+        padding: 10px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        background-color: white;
+      }

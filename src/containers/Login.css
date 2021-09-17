@@ -1,0 +1,17 @@
+/* Code referenced from https://serverless-stack.com/chapters/create-a-login-page.html */
+
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 0px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+      
+    }
+
+    h1 {
+      text-align: center;
+    }
+  }
