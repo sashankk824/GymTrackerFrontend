@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# GymTracker React Frontend Code
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description of the Views
 
-## Available Scripts
+### Login Page
 
-In the project directory, you can run:
+The GymTracker UI starts off with a login page that allows users to login: either as "admin" or "user". It also contains a button to the page to Create a Gym Member account. If the username isn't in the system, it returns "This user does not exist in the database", if the username is in the database, it returns "Sorry, that was the incorrect password", and takes user to Admin Home Page or standard Home Page depending on the role of the user.
+ 
+ ## Standard User Views
+ 
+### Create a Gym Member Page
 
-### `yarn start`
+Allows website viewer to add their details to create an account in the database
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Home Page
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+The Home Page states the name of the user along with the text "Home Page" at the top, then has a button to see the Occupation Status of Machines view and View Latest Statistics for Lifts view, then displays the inputted Machine usage data of the user specifying the exercise, weight, name of the machine, sets left, and date of the record. Then there are two buttons to the Add Lifting Data View and another to return the login screen
 
-### `yarn test`
+### Occupation Status of Machines Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This view is meant congregate the lifting records of the users in the system by displaying whether a particular machine is occupied or not based on the most recent lifting record of a user using that machine, which would be available if the sets left is 0x0 sets by reps and occupied otherwise, as well as the date-time of that record. Also has a button to return to the Home Page
 
-### `yarn build`
+### View Latest Statistics Page
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This view shows the latest sets by reps and weight for each exercise as well as the date-time of the latest record. Also has a button to return to the home page.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Add Lifting Data Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This view allows user to update the lifting record list with the most recent one by inputting exercise, sets by reps left, weight, machine name, and measured date time of the record. Also has button to return to the home page.
 
-### `yarn eject`
+## Admin User Views
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Admin Home Page
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The Admin Home Page displays the Occupation Status of Machine data directly on the home page as well the list of Gym Member information in the system. Contains buttons to the Add Gym Member view and one to return to the Login Screen.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Add Gym Member Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Similar to the Create a Gym Member Page but admins are allowed to define the user role, while accounts created through the Create a Gym Member Page are given 'user' role privilege by default.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
