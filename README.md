@@ -38,3 +38,4 @@ The Admin Home Page displays the Occupation Status of Machine data directly on t
 
 Similar to the Create a Gym Member Page but admins are allowed to define the user role, while accounts created through the Create a Gym Member Page are given 'user' role privilege by default.
 
+Link to GUI Screenshots: [GymTracker Frontend Screenshots]() 
